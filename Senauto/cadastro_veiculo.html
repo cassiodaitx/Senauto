@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/cadastro_veiculo.js"></script>
+    <title>Cadastro de Veículos - Senauto</title>
+</head>
+<body>
+    <form id="cadastro_veiculo" name="cadastro_veiculo" method="post" onsubmit=" return validaCampo()" action="conexao.php">
+        <table>
+            <tr>
+                <td>Modelo:</td>
+                <td><input placeholder="Ex: Volkswagen Golf GTI" name="modelo_veiculo" id="modelo_veiculo" maxlength="50" type="text"></td>
+            </tr>
+            <tr>
+                <td>Ano:</td>
+                <td><input placeholder="Ex: 2015" name="ano_veiculo" id="ano_veiculo" maxlength="4" type="text"></td>
+            </tr>
+            <tr>
+                <td>Preço:</td>
+                <td><input placeholder="Ex: R$87.860,00" name="preco_veiculo" id="preco_veiculo" maxlength="20" type="text"></td>
+            </tr>
+            <tr>
+                <td><input value="Cadastrar" type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
