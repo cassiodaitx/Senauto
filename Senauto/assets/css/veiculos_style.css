@@ -7,20 +7,12 @@ section {
     display: block;
 }
 
-html, body, header, #home {
+html, body, header, #veiculos {
     height: 100%;
 }
 
-html, body, header, #contato {
-    height: 100%;
-}
-
-#home {
+#veiculos {
     background-size: cover;  
-}
-
-#contato {
-    background-size: cover; 
 }
 
 header {
