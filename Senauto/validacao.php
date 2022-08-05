@@ -24,3 +24,4 @@ if($row == 1){
   echo "<script> alert('Login ou senha inválidos') </script>";
   header('Location: login.html');
 }
+?>
