@@ -26,7 +26,7 @@
             <a href="index.html">Contato</a>
           </li>
           <li>
-            <a href="#sobre">Sobre</a>
+            <a href="index.html">Sobre</a>
           </li>
         </ul>
       </nav>
@@ -39,14 +39,13 @@
       include_once('conexao.php');
       $num = 1;
       $class = 'carro-lista carro_lista--"$num"';
-      $loop = 3;
       $select = "SELECT * FROM veiculos";
       $qr = mysqli_query($conexao, $select);
       $i = 1;
       while ($ln = mysqli_fetch_array($qr)) {
         echo '
             <figure class="carro-lista carro_lista--' . $i . '">
-        <img src="data:image/png,' . $ln[mysqli_fetch_object($qr)] . '" class="carro-img" alt="carro' . $i . '">
+        <img src="' . $ln['filename_veiculo'] . '" class="carro-img" alt="carro' . $i . '">
           <div class="carro-descricao">
             <p>' . $ln['nome_veiculo'] . '</p>
             <p>' . $ln['ano_veiculo'] . '</p>

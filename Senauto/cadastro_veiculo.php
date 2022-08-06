@@ -28,7 +28,7 @@
     <title>Cadastro de Veículos - Senauto</title>
 </head>
 <body>
-    <form id="cadastro_veiculo" name="cadastro_veiculo" method="post" onsubmit="return validaCampo()" action="insert_veiculo_banco.php">
+    <form enctype="multipart/form-data" id="cadastro_veiculo" name="cadastro_veiculo" method="post" onsubmit="return validaCampo()" action="insert_veiculo_banco.php">
         <table>
             <tr>
                 <td>Modelo:</td>

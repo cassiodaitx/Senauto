@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -61,12 +65,10 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     transition: 0.2s all ease-in-out;
-    border: 1px solid transparent;
 }
 
 header nav ul li a:hover {
     color: #b3b3b3;
-    border-bottom: 2px solid #b3b3b3;
 }
 
 section div .car {
@@ -96,6 +98,67 @@ section .home-text p {
     margin: 0;
     font-size: 25px;
     padding-right: 20%;
+}
+
+#contato .contatos {
+    padding-top: 16%;
+}
+
+#contato div .whatsapp {
+    padding-left: 10%;
+}
+
+.whatsapp img {
+    float: left;
+    height: 35px;
+    width: 35px;
+    padding-right: 5px;
+}
+
+.telefone img {
+    float: left;
+    height: 35px;
+    width: 35px;
+    padding-right: 5px;
+}
+
+.whatsapp p {
+    font-size: 20px;
+}
+
+.telefone p {
+    font-size: 20px;
+}
+
+.redes img {
+    float: left;
+    height: 35px;
+    width: 35px;
+    padding-right: 5px;
+}
+
+#contato div .telefone {
+    padding-left: 10%;
+}
+
+#contato div .redes {
+    padding-left: 10%;
+}
+
+#contato .redes p {
+    font-size: 25px;
+}
+
+#contato h2 {
+    font-size: 25px;
+}
+
+#contato .form-email {
+    float: right;
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    border-radius: 2px;
 }
 
 @media (max-width: 600px) {
