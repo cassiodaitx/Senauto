@@ -1,0 +1,182 @@
+@media (max-width: 412px) {
+
+    header {
+        position: fixed;
+        height: 120px;
+        width: 100%;
+        background: black;
+    }
+
+    header .logo {
+        position: relative;
+        width: 200px;
+        height: 90px;
+        top: 15px;
+        padding-left: 25%;
+    }
+
+    header .nav {
+        position: relative;
+        height: auto;
+        width: 30%;
+        margin-left: 63%;
+        margin-top: -50px;
+        overflow: hidden;
+    }
+
+    header nav ul {
+        position: relative;
+        margin: 0;
+    }
+
+    header nav ul li {
+        display: none;
+        list-style-type: none;
+        display: inline-block;
+        padding: 0px 0px 0px 50px;
+    }
+
+    header nav ul li a {
+        display: none;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        transition: 0.2s all ease-in-out;
+    }
+
+    header nav ul li a:hover {
+        color: #b3b3b3;
+    }
+
+
+    .carros {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(10, 5vw);
+        grid-gap: 25px;
+    }
+    
+    .carro-img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
+    }
+    
+    .carro_lista--1 {
+        grid-area: carro1;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    
+    .carro_lista--2 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    
+    .carro_lista--3 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    
+    .carro_lista--4 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    
+    .carro_lista--5 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    
+    .carro_lista--6 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    
+    .carro_lista--7 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 9;
+        grid-row-end: 11;
+    }
+    
+    .carro_lista--8 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 9;
+        grid-row-end: 11;
+    }
+    
+    .carro_lista--10 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 9;
+        grid-row-end: 11;
+    }
+    
+    .carro_lista--11 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 9;
+        grid-row-end: 11;
+    }
+    
+    .carro_lista--12 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 9;
+        grid-row-end: 11;
+    }
+    
+    .carro_lista--13 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 9;
+        grid-row-end: 11;
+    }
+    
+    .carro_lista--14 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 9;
+        grid-row-end: 11;
+    }
+    
+    .carro_lista--15 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 9;
+        grid-row-end: 11;
+    }
+    
+    .carro_lista--16 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 9;
+        grid-row-end: 11;
+    }
+    
+    .carro-descricao p {
+        background-color: black;
+        color: white;
+        padding: 1%;
+        padding-left: 10px;
+        margin: 0;
+        font-size: 20px;
+    }
+    
+}

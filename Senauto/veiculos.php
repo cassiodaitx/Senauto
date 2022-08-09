@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/veiculos_style.css">
   <link rel="stylesheet" href="assets/css/veiculos_style_2.css">
+  <link rel="stylesheet" href="assets/css/veiculos_style_media_query.css">
   <title>Veículos - Senauto</title>
 </head>
 
