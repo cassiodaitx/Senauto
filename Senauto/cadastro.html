@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>CADASTRO DE CLIENTES COM BANCO DE DADOS E PHP</title>
+<link rel="stylesheet" type="text/css" href="Style2.css">
+
+</head>
+<body>
+    <form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCampo(); return false;">
+  <table width="350" border="0"> 
+ <tr>
+ <td width="69">Nome:</td>
+ <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" />
+ 
+ </tr>
+ <tr>
+ <td>Email:</td>
+ <td><input name="email" type="text" id="email" size="70" maxlength="60" />
+ 
+ </tr>
+
+ <tr>
+ <td>DDD:</td>
+ <td><input name="ddd" type="text" id="ddd" size="4" maxlength="2" />
+ Telefone:
+ <input name="telefone" type="text" id="telefone" />
+ 
+ </tr>
+ 
+ 
+ <tr>
+ <td>Login:</td>
+ <td><input name="login" type="text" id="login" maxlength="12" />
+
+ </tr>
+ <tr>
+ <td>Senha:</td>
+ <td><input name="senha" type="password" id="senha" maxlength="12" />
+ 
+ </tr>
+
+ <tr>
+ <td colspan="2"><p>
+ <input name="cadastrar" type="submit" id="cadastrar" value="Criar meu cadastro!" />
+ <br />
+ <input name="limpar" type="reset" id="limpar" value="Limpar Campos!" />
+    </a> 
+ <br />
+ 
+ <p>&nbsp; </p></td>
+ </tr>
+ 
+<img class="logo" src="https://clipground.com/images/mu-online-logo-clipart-7.png" alt="logo">
+ </table>
+ 
+</form>
+<a href="index.html"> <button> HOME </button>  </a>
+</body>
+</html>
