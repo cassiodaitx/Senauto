@@ -109,5 +109,21 @@ a {
         transition: border-color .3s;
         float: right;
     }
+
+    .tabela_excluir {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        width: 400px;
+        height: 300px;
+        border-radius: 2px;
+        background-color: rgba(255, 255, 255, 0.567);
+    }
+    
+    .tabela_excluir td {
+        font-size: 20px;
+        padding-left: 10px;
+        margin: 0%;
+    }
 }
 

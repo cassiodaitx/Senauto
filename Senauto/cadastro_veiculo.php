@@ -14,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/cadastro_veiculo_style.css">
+    <title>Cadastro de Veículos - Senauto</title>
     <script>
         function validaCampo() {
     if (document.cadastro_veiculo.nome_veiculo.value == "") {
@@ -32,7 +33,6 @@
     }
     
     </script>
-    <title>Cadastro de Veículos - Senauto</title>
 </head>
 <body>
     <form enctype="multipart/form-data" id="cadastro_veiculo" name="cadastro_veiculo" method="post" onsubmit="return validaCampo()" action="insert_veiculo_banco.php">
