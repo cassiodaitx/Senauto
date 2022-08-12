@@ -77,11 +77,13 @@
 
     <div class="entre-em-contato">
       <div class="form-email">
-        <input class="contato-botao" type="button" value="Enviar">
-        <h2>Entre em contato por e-mail</h2>
-        <input class="contato-nome" placeholder="Digite o seu nome" type="text">
-        <input class="contato-email" placeholder="Digite o seu e-mail" type="text">
-        <textarea class="contato-msg"></textarea>
+        <form action="enviar_email.php">
+          <input class="contato-botao" type="button" value="Enviar">
+          <h2>Entre em contato por e-mail</h2>
+          <input required maxlength="30" minlength="2" class="contato-nome" placeholder="Digite o seu nome" type="text">
+          <input required maxlength="50" minlength="9" class="contato-email" placeholder="Digite o seu e-mail" type="text">
+          <textarea required maxlength="100" minlength="2" class="contato-msg"></textarea>
+        </form>
       </div>
     </div>
   </section>
