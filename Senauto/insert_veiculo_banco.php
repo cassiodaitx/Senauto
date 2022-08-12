@@ -10,5 +10,5 @@ $query = "INSERT INTO veiculos (nome_veiculo, ano_veiculo, preco_veiculo, filena
 VALUES ('".$nome_veiculo."', '".$ano_veiculo."', '".$preco_veiculo."', '".$caminho."');";
 
 mysqli_query($conexao, $query);
-header('Location: cadastro_veiculo.php')
+header('Location: cadastro_veiculo.php');
 ?>

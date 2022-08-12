@@ -11,11 +11,13 @@
 </head>
 
 <body>
-  <header>
-    <div>
+  <input id="close-menu" class="close-menu" type="checkbox">
+  <label class="close-menu-label" title="close-menu" for="close-menu"></label>
+  <aside class="menu">
+    <section class="main-content menu-content">
+      <a href="index.html"><img class="logo" src="assets/img/senautologo.png" alt="logo" /></a>
       <nav class="main-nav">
-        <a href="index.html"><img class="logo" src="assets/img/senautologo.png" alt="logo" /></a>
-        <ul class="nav">
+        <ul onclick="getElementById('close-menu').checked = false;">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -30,11 +32,12 @@
           </li>
         </ul>
       </nav>
-    </div>
-  </header>
+    </section>
+  </aside>
 
   <section id="home">
-    <div class="home-car">
+    <a href="index.html"><img class="logopreto" src="assets/img/logopreto.png" alt="logo"></a>
+    <div class="home-car main-content">
       <img class="car" src="assets/img/onix.png" alt="onix" />
     </div>
 
@@ -47,7 +50,7 @@
     </div>
   </section>
 
-  <section id="contato">
+  <section class="main-content" id="contato">
     <div class="contatos">
       <div class="whatsapp">
         <img src="assets/img/whatsapp.png" alt="logo-whatsapp">
@@ -83,7 +86,7 @@
     </div>
   </section>
 
-  <section id="sobre">
+  <section class="main-content" id="sobre">
     <div class="sobre-texto">
       <h1>Sobre nós</h1>
       <p>A <b>Senauto</b> atua no mercado de revenda de automóveis desde 2022, sempre buscando oferecer veículos de
@@ -96,12 +99,14 @@
   </section>
 
   <footer>
-    <div class="footer-texto">
+    <div class="footer-texto main-content">
       <p>Endereço: Av. Dorival Cândido Luz de Oliveira, 480 - Centro, Gravataí - RS</p>
       <p>Todos os direitos reservados. ®</p>
       <p class="devs">Desenvolvido por: Bruno, Cassio e Maxsuel</p>
     </div>
   </footer>
+
+  <a class="back-to-top" href="#">^</a>
 </body>
 
 </html>

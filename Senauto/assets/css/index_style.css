@@ -7,8 +7,9 @@ body {
     margin: 0;
 }
 
-section {
-    display: block;
+.main-content {
+    max-width: 1450px;
+    margin: 0 auto;
 }
 
 html,
@@ -44,48 +45,55 @@ header,
     background-size: cover;
 }
 
-header {
-    position: fixed;
+.logopreto {
+    display: none;
+}
+
+.menu {
     height: 120px;
+    position: fixed;
     width: 100%;
     background: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-header .logo {
+.close-menu {
+    display: none;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo {
     position: relative;
     width: 200px;
     height: 90px;
-    top: 15px;
-    padding-left: 10%;
+    top: 10px;
 }
 
-header .nav {
-    position: relative;
-    height: auto;
-    width: 30%;
-    margin-left: 63%;
-    margin-top: -50px;
+.menu ul {
+    display: flex;
+    list-style: none;
 }
 
-header nav ul {
-    position: relative;
-    margin: 0;
-}
-
-header nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0px 0px 0px 50px;
-}
-
-header nav ul li a {
-    font-size: 20px;
+.menu ul li a {
+    display: block;
     text-decoration: none;
+    padding: 20px;
     color: white;
+    font-size: 20px;
+    margin-top: 10px;
     transition: 0.2s all ease-in-out;
 }
 
-header nav ul li a:hover {
+.menu ul li a:hover {
     color: #b3b3b3;
 }
 
@@ -97,7 +105,6 @@ section div .car {
 
 section .home-car {
     padding-top: 15%;
-    padding-left: 10%;
 }
 
 section .home-text {
@@ -107,7 +114,6 @@ section .home-text {
 
 section .home-text h1 {
     font-size: 35px;
-    padding-bottom: -50%;
     margin: 0px;
 }
 
@@ -119,7 +125,7 @@ section .home-text p {
 }
 
 #contato .contatos {
-    padding-top: 13%;
+    padding-top: 16%;
 }
 
 .contatos {
@@ -181,10 +187,6 @@ section .home-text p {
     padding-right: 10px;
 }
 
-#contato .contatos {
-    padding-left: 10%;
-}
-
 #contato .redes h2 {
     font-size: 40px;
 }
@@ -194,8 +196,7 @@ section .home-text p {
 }
 
 #contato .form-email {
-    margin-top: 15%;
-    margin-right: 10%;
+    margin-top: 18%;
     float: right;
     width: 700px;
     height: 500px;
@@ -270,9 +271,8 @@ section .home-text p {
 }
 
 #sobre .sobre-texto {
-    padding-top: 17%;
-    padding-left: 10%;
-    width: 75%;
+    padding-top: 25%;
+    width: 100%;
 }
 
 .sobre-texto h1 {
@@ -296,6 +296,7 @@ footer {
 }
 
 footer p {
+    position: relative;
     color: grey;
     text-align: center;
 }
@@ -309,4 +310,8 @@ footer .devs {
     margin: 0;
     margin-right: 15px;
     font-size: 15px;
+}
+
+.back-to-top {
+    display: none;
 }

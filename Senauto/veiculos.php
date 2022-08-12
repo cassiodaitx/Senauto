@@ -12,11 +12,13 @@
 </head>
 
 <body>
-  <header>
-    <div>
+<input id="close-menu" class="close-menu" type="checkbox">
+  <label class="close-menu-label" title="close-menu" for="close-menu"></label>
+  <aside class="menu">
+    <section class="main-content menu-content">
+      <a href="index.html"><img class="logo" src="assets/img/senautologo.png" alt="logo" /></a>
       <nav class="main-nav">
-        <a href="index.html"><img class="logo" src="assets/img/senautologo.png" alt="logo" /></a>
-        <ul class="nav">
+        <ul onclick="getElementById('close-menu').checked = false;">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -31,9 +33,9 @@
           </li>
         </ul>
       </nav>
-    </div>
-  </header>
-
+    </section>
+  </aside>
+  <a href="index.html"><img class="logopreto" src="assets/img/logopreto.png" alt="logo"></a>
   <section>
     <div class="carros">
       <?php

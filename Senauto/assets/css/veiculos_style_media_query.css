@@ -1,54 +1,79 @@
 @media (max-width: 912px) {
-
-    header {
-        position: fixed;
-        height: 120px;
-        width: 100%;
-        background: black;
+    .logopreto {
+        padding-top: 3%;
+        display: block;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    header .logo {
+    .menu {
+        bottom: 0;
+        height: 100%;
+        text-align: center;
+    }
+
+    .menu .logo {
         position: relative;
         width: 200px;
         height: 90px;
-        top: 15px;
-        padding-left: 25%;
+        margin-left: 50px;
     }
 
-    header .nav {
-        position: relative;
-        height: auto;
-        width: 30%;
-        margin-left: 63%;
-        margin-top: -50px;
-        overflow: hidden;
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
     }
 
-    header nav ul {
-        position: relative;
-        margin: 0;
+    .menu-content {
+        height: 100vh;
     }
 
-    header nav ul li {
+    .menu {
         display: none;
-        list-style-type: none;
-        display: inline-block;
-        padding: 0px 0px 0px 50px;
     }
 
-    header nav ul li a {
-        display: none;
-        font-size: 20px;
-        text-decoration: none;
+    .logopreto {
+        padding-top: 3%;
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .close-menu {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 20px;
+        right: 20px;
+        background-color: black;
         color: white;
-        transition: 0.2s all ease-in-out;
+        font-size: 45px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding: 0.5px;
+        cursor: pointer;
     }
 
-    header nav ul li a:hover {
-        color: #b3b3b3;
+    .close-menu:checked~.menu {
+        display: block;
     }
 
-
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+    
     .carros {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -157,5 +182,42 @@
         margin: -1px;
         font-size: 20px;
     }
-    
+}
+
+@media (max-width: 414px) {
+    .logopreto {
+        padding-top: 3%;
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu {
+        bottom: 0;
+        height: 100%;
+        text-align: center;
+    }
+
+    .menu .logo {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        margin-left: 50px;
+        padding-right: 30px;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 20px;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
 }

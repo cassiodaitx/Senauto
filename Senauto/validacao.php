@@ -19,9 +19,9 @@ if($row == 1){
   $_SESSION['usuario'] = $usuario;
   setcookie("login",$usuario);
   header('Location: cadastro_veiculo.php');
-  exit();
 }else{
   echo "<script> alert('Login ou senha inválidos') </script>";
   header('Location: login.html');
+  exit();
 }
 ?>

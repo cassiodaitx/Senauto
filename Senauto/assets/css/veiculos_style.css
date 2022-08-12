@@ -11,50 +11,63 @@ html, body, header, #veiculos {
     height: 100%;
 }
 
+.close-menu {
+    display: none;
+}
+
+.logopreto {
+    display: none;
+}
+
+.main-content {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
 #veiculos {
     background-size: cover;  
 }
 
-header {
-    position: fixed;
+.menu {
     height: 120px;
+    position: fixed;
     width: 100%;
     background: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-header .logo {
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo {
     position: relative;
     width: 200px;
     height: 90px;
-    top: 15px;
-    padding-left: 10%;
+    top: 10px;
 }
 
-header .nav {
-    position: relative;
-    height: auto;
-    width: 30%;
-    margin-left: 63%;
-    margin-top: -50px;
+.menu ul {
+    display: flex;
+    list-style: none;
 }
 
-header nav ul {
-    position: relative;
-    margin: 0;
-}
-header nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0px 0px 0px 50px;
-}
-
-header nav ul li a {
-    font-size: 20px;
+.menu ul li a {
+    display: block;
     text-decoration: none;
+    padding: 20px;
     color: white;
+    font-size: 20px;
+    margin-top: 10px;
     transition: 0.2s all ease-in-out;
 }
 
-header nav ul li a:hover {
+.menu ul li a:hover {
     color: #b3b3b3;
 }
