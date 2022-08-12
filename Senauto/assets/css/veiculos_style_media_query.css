@@ -1,4 +1,4 @@
-@media (max-width: 412px) {
+@media (max-width: 912px) {
 
     header {
         position: fixed;
@@ -51,8 +51,8 @@
 
     .carros {
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(10, 5vw);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(97, 5vw);
         grid-gap: 25px;
     }
     
@@ -66,116 +66,95 @@
     
     .carro_lista--1 {
         grid-area: carro1;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 9;
     }
     
     .carro_lista--2 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 3;
-        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 12;
+        grid-row-end: 17;
     }
     
     .carro_lista--3 {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 3;
-        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 20;
+        grid-row-end: 25;
     }
     
     .carro_lista--4 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 6;
-        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 28;
+        grid-row-end: 33;
     }
     
     .carro_lista--5 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 6;
-        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 36;
+        grid-row-end: 41;
     }
     
     .carro_lista--6 {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 6;
-        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 44;
+        grid-row-end: 49;
     }
     
     .carro_lista--7 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 9;
-        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 52;
+        grid-row-end: 57;
     }
     
     .carro_lista--8 {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 9;
-        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 60;
+        grid-row-end: 65;
+    }
+    
+    .carro_lista--9 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 68;
+        grid-row-end: 73;
     }
     
     .carro_lista--10 {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 9;
-        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 76;
+        grid-row-end: 81;
     }
     
     .carro_lista--11 {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 9;
-        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 84;
+        grid-row-end: 89;
     }
     
     .carro_lista--12 {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 9;
-        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 92;
+        grid-row-end: 97;
     }
-    
-    .carro_lista--13 {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 9;
-        grid-row-end: 11;
-    }
-    
-    .carro_lista--14 {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 9;
-        grid-row-end: 11;
-    }
-    
-    .carro_lista--15 {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 9;
-        grid-row-end: 11;
-    }
-    
-    .carro_lista--16 {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 9;
-        grid-row-end: 11;
-    }
-    
+
     .carro-descricao p {
         background-color: black;
         color: white;
         padding: 1%;
         padding-left: 10px;
-        margin: 0;
+        margin: -1px;
         font-size: 20px;
     }
     

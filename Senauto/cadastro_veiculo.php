@@ -31,11 +31,11 @@
     } else
     return true;
     }
-    
     </script>
 </head>
 <body>
     <form enctype="multipart/form-data" id="cadastro_veiculo" name="cadastro_veiculo" method="post" onsubmit="return validaCampo()" action="insert_veiculo_banco.php">
+    <h1 class="titulo_veiculo">Inserir Veículos</h1>
         <table class="tabela_cadastrar">
             <tr>
                 <td class="inst">Modelo:</td>
@@ -58,8 +58,8 @@
             </tr>
         </table>
     </form>
-
         <table class="tabela_excluir">
+            <h1 class="titulo_veiculo">Exclusão de Veículos</h1>
             <?php
                                 
                 $query = "SELECT * FROM veiculos";
@@ -69,14 +69,13 @@
                 while ($i = mysqli_fetch_array($sql)) {
                     echo
                     '<tr>
-                    <td><a href="cadastro_veiculo.php?excluir=' .$i["id_veiculo"]. '">' .$i["id_veiculo"]. '</a></td>'.
+                    <td><a onclick="return confirm(\'Tem certeza que deseja excluir o veículo?\');" href="cadastro_veiculo.php?excluir=' .$i["id_veiculo"]. '">' .$i["id_veiculo"]. '</a></td>'.
                     '<td>' .$i["nome_veiculo"]. '</td>'.
                     '<td>' .$i['ano_veiculo']. '</td>'.
                     '<td>' .$i['preco_veiculo']. '</td>
                     </tr>';
                 }
             ?>
-
         </table>
     </form>
 </body>
@@ -86,15 +85,3 @@
         header('Location: login.html');  
     }
 ?>
-
-<tr>
-    <td>
-        $
-    </td>
-    <td>
-
-    </td>
-    <td>
-
-    </td>
-</tr>

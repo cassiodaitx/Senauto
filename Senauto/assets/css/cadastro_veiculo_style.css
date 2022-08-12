@@ -12,7 +12,6 @@ input {
 .tabela_cadastrar {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
     width: 500px;
     height: 300px;
     border-radius: 2px;
@@ -75,6 +74,12 @@ background-color: #232323;
     margin: 0%;
 }
 
+.titulo_veiculo {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
 a {
     color: black;
 }
@@ -84,6 +89,7 @@ a {
     .tabela_cadastrar {
         width: 400px;
         height: 300px;
+        justify-content: center;
     }
 
     input[type="file"] {
@@ -115,6 +121,54 @@ a {
         margin-right: auto;
         margin-top: 1%;
         width: 400px;
+        height: 300px;
+        border-radius: 2px;
+        background-color: rgba(255, 255, 255, 0.567);
+    }
+    
+    .tabela_excluir td {
+        font-size: 20px;
+        padding-left: 10px;
+        margin: 0%;
+    }
+}
+
+@media (max-width: 360px) {
+    .tabela_cadastrar {
+        width: 390px;
+        height: 300px;
+        justify-content: center;
+    }
+
+    input[type="file"] {
+          background-color: #232323;
+          border-radius: 5px;
+          color: #fff;
+          cursor: pointer;
+          margin: 10px;
+          padding: 6px; 
+          height: 20px;
+          width: 113px;
+          float: right;
+          margin-right: 10%;
+    }
+
+    .placeholder {
+        border: 2px solid silver;
+        padding: 8px 0;
+        border-width: 0 0 2px 0;
+        width: 190px;
+        margin-top: 15px;
+        margin-right: 10%;
+        transition: border-color .3s;
+        float: right;
+    }
+
+    .tabela_excluir {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        width: 390px;
         height: 300px;
         border-radius: 2px;
         background-color: rgba(255, 255, 255, 0.567);
