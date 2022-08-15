@@ -15,6 +15,7 @@ if (isset($_COOKIE["login"])) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/cadastro_veiculo_style.css">
+        <link rel="icon" href="assets/img/iconsite.png" type="image/x-icon">
         <title>Cadastro de Veículos - Senauto</title>
         <script>
             function validaCampo() {

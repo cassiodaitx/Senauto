@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/veiculos_style.css">
   <link rel="stylesheet" href="assets/css/veiculos_style_2.css">
   <link rel="stylesheet" href="assets/css/veiculos_style_media_query.css">
+  <link rel="icon" href="assets/img/iconsite.png" type="image/x-icon">
   <title>Veículos - Senauto</title>
 </head>
 
